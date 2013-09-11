@@ -41,10 +41,9 @@ class TestFlight
 	}
 
 #if android
-
-    private static var take_off        = JNI.createStaticMethod("com/testflightapp/lib/TestFlight", "takeOff", "(Landroid/app/ApplicationLjava/lang/String)");
-    private static var pass_checkpoint = JNI.createStaticMethod("com/testflightapp/lib/TestFlight", "passCheckpoint", "(Ljava/lang/String)");
-    private static var remote_log      = JNI.createStaticMethod("com/testflightapp/lib/TestFlight", "log", "(Ljava/lang/String)");
+    private static var take_off = JNI.createStaticMethod("testflight/android/TestFlightOpenFL", "takeOff", "(Ljava/lang/String;)V");
+    private static var pass_checkpoint = JNI.createStaticMethod("com/testflightapp/lib/TestFlight", "passCheckpoint", "(Ljava/lang/String;)V");
+    private static var remote_log      = JNI.createStaticMethod("com/testflightapp/lib/TestFlight", "log", "(Ljava/lang/String;)V");
 
 #else
 

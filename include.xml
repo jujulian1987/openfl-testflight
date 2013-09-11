@@ -2,4 +2,5 @@
 <extension>
 	<ndll name="testflight" if="ios" />
 	<java path="lib/TestFlightLib.jar" if="android" />
+    <java path="project/android" if="android" />
 </extension>
