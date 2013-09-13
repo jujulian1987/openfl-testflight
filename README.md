@@ -2,8 +2,11 @@ TestFlight SDK for OpenFL
 =========================
 
 TestFlight comes with a set of SDK calls that can add helpful feedback from your app. Checkpoints are especially useful for games.
-Android is integreated and works but Testflight SDK doesn't seem to be compatible with OpenFL yet. 
+Android is integreated and works but Testflight SDK Debugger doesn't recieve any logs on android yet. Perhaps it is my fault.
+Below you will find the steps I tried to get it work on android:
+--------------
 According to the docs you need to implement TestFlight in your own Application:
+
 
 templates/android/MyApplication.java
 ```java
